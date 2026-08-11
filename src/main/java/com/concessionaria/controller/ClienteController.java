@@ -15,7 +15,7 @@ public class ClienteController {
     private ClienteRepository clienteRepository;
 
     @PostMapping
-    public Cliente adicionarCliente(@RequestBody Cliente cliente){ return clienteRepository.save(cliente); }
+    public Cliente cadastroCliente(@RequestBody Cliente cliente){ return clienteRepository.save(cliente); }
 
     @GetMapping("/{id}")
     public Cliente mostrarCliente(@PathVariable("id") Integer id){ return clienteRepository.findById(id).orElse(null); }

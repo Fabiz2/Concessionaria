@@ -15,7 +15,7 @@ public class CarroController {
     private CarroRepository carroRepository;
 
     @PostMapping
-    public Carro adicionarCarro(@RequestBody Carro carro){ return carroRepository.save(carro); }
+    public Carro cadastroCarro(@RequestBody Carro carro){ return carroRepository.save(carro); }
 
     @GetMapping("/{id}")
     public Carro mostrarCarro(@PathVariable("id") Integer id){ return carroRepository.findById(id).orElse(null); }
