@@ -10,6 +10,7 @@ public record CarroResponse(
         String modelo,
         String marca,
         String placa,
+        String cor,
         String chassi,
         Integer kilometragem,
         BigDecimal preco,

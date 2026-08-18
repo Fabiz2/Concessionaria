@@ -28,6 +28,9 @@ public class Carro {
     @Column(unique = true)
     private String placa;
 
+    @Column(nullable = false)
+    private String cor;
+
     @Column(nullable = false, unique = true)
     private String chassi;
 

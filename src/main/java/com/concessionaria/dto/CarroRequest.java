@@ -21,6 +21,10 @@ public record CarroRequest(
         @NotBlank(message = "Campo obrigatorio")
         String placa,
 
+        @Schema(description = "Cor do carro", example = "Azul")
+        @NotBlank(message = "Campo obrigatorio")
+        String cor,
+
         @Schema(description = "Chassi do carro", example = "1AAA22BB333333")
         @NotBlank(message = "Campo obrigatorio")
         String chassi,
