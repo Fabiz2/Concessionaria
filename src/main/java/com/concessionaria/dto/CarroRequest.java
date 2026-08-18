@@ -37,10 +37,10 @@ public record CarroRequest(
         @NotBlank(message = "Campo obrigatorio")
         String dtModelo,
 
+
         @Schema(description = "Ano de fabricação", example = "2021")
         @NotBlank(message = "Campo obrigatorio")
         String dtFabricacao,
-
         @Schema(description = "Status do carro", example = "DISPONIVEL/RESERVADO/VENDIDO")
         @NotBlank(message = "Campo obrigatorio")
         Status status,
